@@ -1,0 +1,150 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.azkar-app {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: 'Markazi Text', serif, Arial, sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.category-list button {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 0.4rem 1.2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.category-list button.active {
+  background: #2d8f6f;
+  color: #fff;
+  border-color: #2d8f6f;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.azkar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.azkar-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1rem 1.2rem;
+  direction: rtl;
+  text-align: right;
+  border: 1px solid #eee;
+}
+.zekr {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.desc {
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+.ref {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.counter-row {
+  display: flex;
+  justify-content: flex-end;
+}
+.counter-row button {
+  background: #2d8f6f;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.3rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.counter-row button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .azkar-app {
+    padding: 0.5rem;
+  }
+  .azkar-card {
+    padding: 0.7rem 0.5rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
