@@ -52,6 +52,7 @@ function App() {
           ))}
         </select>
       </div>
+      <div className="category-list">
       <input
         type="text"
         placeholder="بحث..."
@@ -59,15 +60,16 @@ function App() {
         onChange={(e) => setSearch(e.target.value)}
         className="search-input"
       />
+      </div>
       <div className="azkar-list">
         {filteredAzkar.map((z, idx) => (
-          <div className="azkar-card" key={idx}>
+          <div className="azkar-card" key={idx}
+          onClick={() => handleCount(idx, z.count || 1)} >
             <div className="zekr">{z.zekr}</div>
             {z.description && <div className="desc">{z.description}</div>}
             {z.reference && <div className="ref">{z.reference}</div>}
             <div className="counter-row">
               <button
-                onClick={() => handleCount(idx, z.count || 1)}
                 disabled={(counters[idx] || 0) >= (z.count || 1)}
               >
                 {counters[idx] || 0} / {z.count || 1}
