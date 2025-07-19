@@ -42,15 +42,15 @@ function App() {
     <div className="azkar-app">
       <h1>Azkary By Islam El-lithy</h1>
       <div className="category-list">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            className={cat === selectedCategory ? "active" : ""}
-            onClick={() => setSelectedCategory(cat)}
-          >
-            {cat}
-          </button>
-        ))}
+        <select
+          value={selectedCategory}
+          onChange={e => setSelectedCategory(e.target.value)}
+          className="category-dropdown"
+        >
+          {categories.map((cat) => (
+            <option key={cat} value={cat}>{cat}</option>
+          ))}
+        </select>
       </div>
       <input
         type="text"

@@ -137,6 +137,17 @@ h1 {
   cursor: not-allowed;
 }
 
+.category-dropdown {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  color: #222;
+}
+
 @media (max-width: 600px) {
   .azkar-app {
     padding: 0.5rem;
