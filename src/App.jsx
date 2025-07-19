@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="azkar-app">
-      <h1>أذكار Azkar</h1>
+      <h1>Azkary By Islam El-lithy</h1>
       <div className="category-list">
         {categories.map((cat) => (
           <button
